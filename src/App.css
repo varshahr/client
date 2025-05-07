@@ -1,0 +1,22 @@
+/* App.css */
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #121212;
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Remove max-width to let content span full width */
+#root {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+/* Optional global link styling */
+a {
+  color: inherit;
+  text-decoration: none;
+}

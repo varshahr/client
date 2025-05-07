@@ -1,0 +1,119 @@
+/* General Styling */
+.chordify {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+    background-color: #121212;
+    color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Header */
+  .chordify h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #1db954;
+  }
+  
+  /* Upload Section */
+  .upload-section {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  
+  .upload-section input {
+    padding: 10px;
+    font-size: 1rem;
+    background-color: #1db954;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .upload-section input:disabled {
+    background-color: #444;
+  }
+  
+  .upload-section p {
+    font-size: 1.1rem;
+    color: #ccc;
+    margin-top: 10px;
+  }
+  
+  /* Audio Player */
+  .audio-player {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .audio-player audio {
+    width: 100%;
+    border-radius: 8px;
+  }
+  
+  .audio-player button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    background-color: #1db954;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .audio-player button:hover {
+    background-color: #1ed760;
+  }
+  
+  /* Chord Display */
+  .chords-display {
+    margin-top: 40px;
+    text-align: center;
+  }
+  
+  .chords-display h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #1db954;
+  }
+  
+  .chords-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .chord {
+    font-size: 1.5rem;
+    padding: 8px 15px;
+    margin: 5px;
+    background-color: #1db954;
+    color: white;
+    border-radius: 50px;
+    text-transform: uppercase;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+  }
+  
+  .chord:hover {
+    background-color: #1ed760;
+  }
+  
+  /* Info Section */
+  .info {
+    margin-top: 40px;
+    text-align: center;
+    font-size: 1.1rem;
+    color: #ccc;
+  }
+  
+  .info p {
+    margin-bottom: 0;
+  }
+  
