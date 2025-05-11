@@ -1,0 +1,28 @@
+.search-results-container {
+  background-color: #121212; /* dark background */
+  color: rgb(221, 211, 211); /* light text */
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.search-results-container h2 {
+  margin-bottom: 20px;
+}
+
+.track-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.track-item img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-right: 12px;
+}
+
+.track-item audio {
+  margin-left: auto;
+}

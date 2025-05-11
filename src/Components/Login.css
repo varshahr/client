@@ -1,0 +1,92 @@
+/* Set the background image for the login container */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url('/images/p.jpg'); /* Replace with your image URL */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Shared form and logout box style */
+.login-form {
+  background-color: rgba(94, 92, 92, 0.8);
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(119, 117, 117, 0.4);
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Headings */
+.login-form h1,
+.login-form h2 {
+  color: #219da6;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 2rem;
+}
+
+/* Input fields */
+.login-form input {
+  margin-bottom: 15px;
+  padding: 12px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  background: #aba8a8;
+  color: #fff;
+  width: 100%;
+}
+
+/* Login button */
+.login-form button {
+  padding: 12px;
+  background-color: #219da6;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+  width: 100%;
+}
+
+.login-form button:hover {
+  background-color: #1b858c;
+}
+
+/* Paragraph below login form */
+.login-form p {
+  margin-top: 15px;
+  color: #ccc;
+  text-align: center;
+}
+
+/* Signup link */
+.login-form a {
+  color: #219da6;
+  text-decoration: none;
+}
+
+/* Logout button */
+.logout-button {
+  padding: 12px 24px;
+  background-color: #e91e63; /* Custom logout color */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+  margin-top: 20px;
+}
+
+.logout-button:hover {
+  background-color: #c2185b;
+}

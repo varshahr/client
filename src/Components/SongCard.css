@@ -1,31 +1,75 @@
 .song-card {
-    background-color: #1e1e1e;
-    padding: 12px;
-    border-radius: 10px;
-    width: 160px;
-    text-align: center;
-    transition: transform 0.2s;
-  }
-  
-  .song-card:hover {
-    transform: scale(1.05);
-    background-color: #282828;
-  }
-  
-  .song-image {
-    width: 100%;
-    height: 160px;
-    border-radius: 8px;
-    object-fit: cover;
-  }
-  
-  .song-info h4 {
-    margin: 10px 0 5px;
-    font-size: 16px;
-  }
-  
-  .song-info p {
-    font-size: 14px;
-    color: #b3b3b3;
-  }
-  
+  background-color: #1e1e1e;
+  padding: 16px;
+  border-radius: 12px;
+  width: 200px;
+  text-align: center;
+  transition: transform 0.2s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.song-card:hover {
+  transform: scale(1.05);
+  background-color: #282828;
+}
+
+.song-image {
+  width: 100%;
+  height: 160px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.song-info {
+  margin-top: 10px;
+}
+
+.song-info h4 {
+  margin: 5px 0;
+  font-size: 16px;
+  color: #fff;
+}
+
+.song-info p {
+  font-size: 14px;
+  color: #b3b3b3;
+  margin: 0;
+}
+
+/* Controls above the progress bar */
+.control-buttons {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin-top: 12px;
+  margin-bottom: 8px;
+}
+
+.control-buttons button,
+.control-buttons .download-btn {
+  background-color: #0d0d0d;
+  border: none;
+  border-radius: 50%;
+  padding: 12px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.control-buttons button:hover,
+.control-buttons .download-btn:hover {
+  background-color: #1da1b9;
+}
+
+/* Progress bar below controls */
+.progress-bar {
+  width: 90%;
+  accent-color: #1da1b9;
+  height: 6px;
+  border-radius: 5px;
+  cursor: pointer;
+}

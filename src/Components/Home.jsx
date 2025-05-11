@@ -1,3 +1,4 @@
+// Home.jsx
 import React from 'react';
 import './Home.css';
 import SongCard from './SongCard';
@@ -5,10 +6,34 @@ import FeatureSection from './FeatureSection';
 
 const Home = () => {
   const songs = [
-    { id: 1, title: "Kesariya", artist: "Arijit Singh", image: "/images/song.png" },
-    { id: 2, title: "Heeriye", artist: "Jasleen Royal", image: "/images/this.jpg" },
-    { id: 3, title: "RamaChakkani Seetha", artist: "Arijit Singh", image: "/images/fav.jpg" },
-    { id: 4, title: "Naatu Naatu", artist: "Rahul Sipligunj", image: "/images/t.jpg" },
+    {
+      id: 1,
+      title: "Kesariya",
+      artist: "Arijit Singh",
+      image: "/images/song.png",
+      audio: "/songs/k.mp3"
+    },
+    {
+      id: 2,
+      title: "Heeriye",
+      artist: "Jasleen Royal",
+      image: "/images/this.jpg",
+      audio: "/songs/h.mp3"
+    },
+    {
+      id: 3,
+      title: "RamaChakkani Seetha",
+      artist: "Arijit Singh",
+      image: "/images/fav.jpg",
+      audio: "/songs/c.mp3"
+    },
+    {
+      id: 4,
+      title: "Naatu Naatu",
+      artist: "Rahul Sipligunj",
+      image: "/images/t.jpg",
+      audio: "/songs/n.mp3"
+    }
   ];
 
   return (
@@ -18,14 +43,14 @@ const Home = () => {
         <FeatureSection />
       </div>
 
-      <div className="hero-section">
-        <h2>Welcome back!</h2>
+      <div className="content-section">
+        <h1 className="welcome-heading">Welcome back!</h1>
         <p>Explore your favorite beats, trending playlists, and fresh releases.</p>
       </div>
 
-      <section className="trending-section">
+      <section className="trending-section content-section">
         <h2>🎵 Trending Now</h2>
-        <div className="songs-container">
+        <div className="song-list">
           {songs.map((song) => (
             <SongCard key={song.id} song={song} />
           ))}

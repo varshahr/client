@@ -1,38 +1,64 @@
-/* Library.css */
-
 .library-container {
-    padding: 40px 20px;
-    color: white;
-    background-color: #121212;
-    min-height: 100vh;
-  }
-  
-  .library-header {
-    text-align: center;
-    margin-bottom: 40px;
-  }
-  
-  .library-header h2 {
-    font-size: 2.5rem;
-  }
-  
-  .library-header p {
-    color: #ccc;
-    font-size: 1.1rem;
-  }
-  
-  .library-section {
-    margin-bottom: 30px;
-  }
-  
-  .library-section h3 {
-    font-size: 1.5rem;
-    color: #1db954;
-    margin-bottom: 10px;
-  }
-  
-  .empty-msg {
-    color: #999;
-    font-style: italic;
-  }
-  
+  background-color: #121212;
+  color: #ddd;
+  min-height: 100vh;
+  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.track-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.track-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  gap: 15px;
+  border-bottom: 1px solid #2a2a2a;
+  padding-bottom: 10px;
+}
+
+.album-image {
+  width: 64px;
+  height: 64px;
+  border-radius: 6px;
+}
+
+.track-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.track-name {
+  font-weight: bold;
+  margin: 0;
+  color: #fff;
+}
+
+.track-artist {
+  margin: 5px 0;
+  color: #aaa;
+}
+
+.play-button {
+  background-color: #1db954;
+  color: #fff;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.2s ease;
+  margin-top: 5px;
+}
+
+.play-button:hover {
+  background-color: #1ed760;
+}
+
+.preview-audio {
+  margin-top: 5px;
+}
