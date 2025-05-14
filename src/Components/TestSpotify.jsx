@@ -5,8 +5,8 @@ const TestSpotify = () => {
 
   useEffect(() => {
     const fetchToken = async () => {
-      const clientId = '371373a6165945668baefb710251a115';
-      const clientSecret = 'e36bd6d597064e708659b3cd35ede108';
+      const clientId = 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx';
+      const clientSecret = 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx';
 
       const response = await fetch('https://accounts.spotify.com/api/token', {
         method: 'POST',
